@@ -1,0 +1,308 @@
+body {
+    background-color: #F2D3E4;
+    margin: 0;
+}
+
+.radius {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+h1 {
+    color: #E82E89;
+    font-size: 132px;
+    font-family: "coquette", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    color: #EC624C;
+    font-size: 86px;
+    font-family: "ador-hairline", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    color: black;
+    font-size: 33px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+.icone {
+    width: 60px;
+    margin: 10px;
+}
+
+#relative {
+    /* demander a shad pour la potision relative*/
+    background: linear-gradient(266deg, rgba(236,98,76,1) 0%, rgba(246,190,217,1) 100%);
+    width: 100vw;
+    height: 100vh; /* demander a shad */
+
+}
+
+#absolute {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(236,98,76,1) 0%, rgba(246,190,217,1) 100%);
+    width: 650px;
+    height: 650px;
+    border-radius: 650%;
+    margin-top: 30px;
+    right: 20px;
+    text-align: right;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#absolute h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+#absolute h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+#absolute p {
+    font-size: 25px;
+    margin: 0;
+}
+
+#carre-texte {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    }
+
+/*Classe communes*/
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+ .etiquette {
+    width: 25%;
+    border-radius: 40px;
+    background-color: #E82E89;
+    padding: 10px;
+}
+
+.etiquette:hover {
+    background-color:#EC624C;;
+}
+
+.etiquette h2 {
+    color:#F2D3E4;
+    font-size: 50px;
+}
+
+.etiquette p {
+    font-size: 30px;
+}
+
+.texte-align {
+    text-align: center;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.etiquette-milieu {
+    width: 35%;
+}
+
+.w400 {
+    width: 400px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.d-column {
+    flex-direction: column;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.margin30 {
+    margin: 30px;
+}
+
+.margin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.margin1 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.box-shadow {
+    box-shadow: 0px 10px 19px 7px rgba(0,0,0,0.36);
+}
+
+/*Fin Classe communes*/
+
+.inner-elem {
+    width: 40%;
+}
+
+.inner-elem img {
+    width: 100%;
+}
+
+.inner-elem h2 {
+    font-size: 55px;
+}
+
+.inner-elem p {
+    font-size: 25px;
+}
+
+.barbie {
+    width: 300px;
+}
+
+.grand-text {
+    color: #E82E89;
+    font-size: 95px;
+    font-family: "coquette", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+}
+
+
+.footer {
+    background-color: #E82E89;
+    width: 90%;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer p {
+    color: #F2D3E4;
+    font: "futura-pt";
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .d-flex{
+        flex-direction: column;
+    }
+
+    .etiquette-milieu, .etiquette{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .inner-elem{
+        width: 90%;
+    }
+
+    .grand-text {
+        font-size: 60px;
+    }
+
+    .w40 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .w60 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .barbie {
+        margin-top: 20px;
+    }
+
+    #absolute {
+    width: 300px;
+    height: 300px;
+    border-radius: 300%;
+    }
+
+    #carre-texte {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+    }
+
+    #absolute h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    #absolute h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    #absolute p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .box-shadow {
+        box-shadow: none;
+    }
+
+}
